@@ -1,0 +1,143 @@
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Open Sans', sans-serif; */
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body{
+    background: hsl(257, 40%, 49%);
+    color: white;
+    background-image: url('images/bg-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transform: rotate(360deg);
+}
+
+nav{
+    padding: 50px;
+}
+
+.logo img{
+    width: 20%;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    padding: 0 50px;
+}
+
+.image{
+    width: 50%;
+}
+
+.image img{
+    width: 100%;
+}
+
+.content{
+    width: 40%;
+    padding: 20px 60px;
+}
+
+.content h4{
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.content p{
+    font-size: 15px; 
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px 0;
+}
+
+.content .regis{
+    outline: none;
+    border: 2px solid transparent;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 40px;
+    font-size: 15px;
+    padding: 12px 50px;
+    color: hsl(257, 40%, 49%);
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.regis:hover{
+    background: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social{
+    position: relative;
+    left: 80%;
+    padding: 20px 0;
+}
+
+.social i{
+    margin: 0 10px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.social i:hover{
+    color: hsl(300, 69%, 71%);
+    border: 1px solid hsl(300, 69%, 71%);
+}
+
+.social i:nth-child(1){
+    padding: 10px 13px;
+}
+
+@media screen and (max-width: 978px){
+    nav{
+        position: relative;
+        left: 8%;
+    }
+
+    .logo img{
+        width: 50%;
+    }
+
+    .container{
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .content{
+        width: 100%;
+        padding: 40px 0;
+    }
+
+    .content h4{
+        font-size: 32px;
+    }
+
+    .content p{
+        font-size: 18px;
+        padding: 40px 0;
+    }
+
+    .image{
+        width: 100%;
+    }
+
+    .image img{
+        width: 80%;
+    }
+
+    .social{
+        text-align: center;
+        position: relative;
+        left: 0;
+    }
+}
